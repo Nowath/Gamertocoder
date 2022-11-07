@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+
+}
+
+img {
+  border: 0px ;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+
+}
+
+.slideshow-container>.img {
+  opacity: 0.8;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .3
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .3
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+#view-img {
+  display: block;
+  left:50%;
+  top: 70%;
+  margin-left:-5vw;
+  position: fixed;
+  width: 10vw;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-image: radial-gradient(ellipse, rgba(255, 255, 255, 1) 0%, rgb(69, 224, 255) 100%);
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Kanit', sans-serif;
+  transition: transform 0.3s;
+}
+
+#view-img:hover {
+  transform: scale(1.1,1.1);
+}
+
+#hidden-section{
+  display: none;
+}
+@media (max-width:1240px){
+  #view-img{
+    display: flex;
+    justify-content: center;
+    left:45%;
+    top: 70%;
+    align-items: center;
+    width: 200px;
+  }
+}

@@ -1,0 +1,58 @@
+#loading {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(25, 25, 25, 1);
+
+}
+
+.loading_sq>p {
+    font-size: 10vh;
+    font-family: 'Kanit';
+}
+
+.loading_sq {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sq {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 221, 254);
+    animation: loading_sq 1.5s cubic-bezier(.25, .25, .5, 1.57) infinite;
+    transform-origin: center;
+    position: relative;
+}
+span + span {
+    margin-left: -15px;
+}
+@keyframes loading_sq {
+    0% {
+        transform: translateY(0px);
+        background-color: rgb(105, 85, 255);
+    }
+
+    40% {
+        transform: translateY(50px);
+        background-color: rgb(35, 124, 255);
+    }
+
+    100% {
+        transform: translateY(0px);
+        background-color: rgb(105, 85, 255);
+    }
+}
+
+/*
+move animation delay to js 
+easier to adjust
+--cheeta 
+*/

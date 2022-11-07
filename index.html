@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="./css/style.css">
+       <link rel="stylesheet" href="./css/loading.css">
+       <link rel="stylesheet" href="./css/minigame-style.css">
+       <link rel="stylesheet" href="./css/sliderimg.css">
+       <title>Blockman go</title>
+       <link rel="icon" type="image/x-icon" href="./img/logo/logo2.png">
+</head>
+
+<body>
+       <!-- loading -->
+       <div id="loading"></div>
+       <script src="./js/loading.js"></script>
+       <!--make it load & exec before other element-- Tanawat -->
+       <div class="mains-container sections">
+              <div class="aside">
+              <a href="https://blockmango.garena.com/" target="_blank"><img class="logo" src="./img/logo/logo2.png"
+                     width="180px" alt=""></a>
+              <ul class="list">
+                     <li class="home_sb"><a class="btn" href="#home">HOME</a></li>
+                     <li class="minigame_sb"><a class="btn" href="#minigame">MINIGAME</a></li>
+                     <li class="image_sb"><a class="btn" href="#image">IMAGE</a></li>
+                     <li class="end_sb"><a class="btn" href="#end">DOWNLOAD</a></li>
+              </ul>
+              </div>
+              <div class="main-content">
+              <div class="home section" id="home">
+                     <img class="img1" src="./img/logo/logo1.png" width="280px" alt="">
+                     <div class="container">
+                     <section id="section07" class="demo">
+                            <a href="#minigame"><span></span><span></span><span></span></a>
+                     </section>
+                     <div class="chp">
+                            <h1>Garena Blockman GO</h1><br>
+                            <p>เตรียมพบกับเกมแซนด์บ็อกซ์แรกของ Garena - Garena Blockman GO! Garena Blockman GO
+                                   เปิดให้เล่นฟรี, สุดยอดแซนด์บ็อกซ์ที่ให้คุณ เล่น สร้าง และแบ่งปันความสนุกกับเพื่อนของคุณ
+                            </p>
+                     </div>
+                     </div>
+              </div>
+              <hr>
+              <!-- A div that contains the minigame section. -->
+              <div class="minigame section" id="minigame">
+                     <img class="filter reveal img" src="./img/character/benson_04.png" width="300px"
+                     style="position:absolute; top:-100px; right:-100px; transform:rotate(320deg);" alt="">
+                     <img class="img1" src="./img/logo/logo1.png" width="280px" alt="">
+                     <div class="container">
+                     <div class="row">
+                            <div class="content">
+                                   <h1 class="gradient-text">MINIGAME</h1>
+                                   <div class="box-minigames">
+                                          <ul class="grid1" id="list">
+                                          </ul>
+                                   </div>
+                            </div>
+                     </div>
+                     </div>
+              </div>
+              <hr>
+              <!-- A div that contains the image section. -->
+              <div class="image section" id="image">
+                     <img class="reveal img" src="./img/character/image (1).png" width="250px"
+                     style="position:absolute; bottom:30px; right:-20px;" alt="">
+                     <!--<img src="/img/character/block-man-go-noob.gif" style="position:absolute; bottom:0px; right:0px;"  width="200px" alt="">-->
+                     <img class="img1" src="./img/logo/logo1.png" width="280px" alt="">
+                     <div class="container">
+                     <div class="row">
+                            <div class="slidesimg">
+                                   <div class="slideshow-container">
+                                   </div>
+                            </div>
+                            <button id="view-img" onclick="view_img()">view all image</button>
+                     </div>
+                     </div>
+              </div>
+              <hr>
+              <div class="end section" id="end">
+                     <img class="img1" src="./img/logo/logo1.png" width="280px" alt="">
+                     <img class="filter img" src="./img/character/ninja_male_01 (1).png" width="200px"
+                     style="position:absolute; bottom:0px; right:-20px;" alt="">
+                     <div class="container">
+                     <img class="reveal" src="./img/bg/03.png" style="cursor:not-allowed;" width="1100px" alt="">
+                     <div class="cover">
+                            <a href="https://apps.apple.com/app/id1571913622"><img
+                                   src="https://resource.blockmanmobile.com/web/OfficialWebsite/Home/appstore2.png"
+                                   width="200px"></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.app.blockmango"><img
+                                   src="https://resource.blockmanmobile.com/web/OfficialWebsite/Home/googlePlay2.png"
+                                   width="200px"></a>
+                     </div>
+                     </div>
+              </div>
+              </div>
+       </div>
+       <div id="hidden-section"></div>
+       <div id="overlay" style="z-index:100;"></div>
+       <script src="./js/app.js"></script>
+       <script src="./js/aside.js"></script>
+       <script src="./js/minigame.js"></script>
+       <script src="./js/wallpaper.js"></script>
+</body>
+</html>

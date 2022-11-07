@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #111;
+  --accent-color: #8257E5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--black);
+}
+
+img {
+  width: 100%;
+}
+
+/* HEADER */
+header {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1.title {
+  font-size: 3rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-decoration: none;
+  cursor: pointer;
+  color: #111;
+  margin-top: 5px;
+  font-family: 'Kanit', sans-serif;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.btn:hover i {
+  transform: translate(-30px,0px);
+}
+
+.btn h3 {
+  font-size: 15px;
+}
+
+header h2.second-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+/* SECTION */
+section {
+  text-align: center;
+  padding: 2rem 3%;
+}
+
+section img:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+section img {
+  cursor: pointer;
+  transition: opacity 400ms;
+}
+
+section img:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  color: var(--white);
+  height: 20vh;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+footer p a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+/* ANIMATIONS */
+header h1.title {
+  animation: rise 300ms backwards ease-out;
+}
+
+header h2.second-title {
+  animation: rise 400ms backwards ease-out;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+}
+
+/* MEDIA QUERIES */
+/* Tablets */
+@media screen and (min-width: 480px) {
+  section {
+    padding: 2rem 10% 10%;
+  }
+}
+
+/* Small Screens, laptops */
+@media screen and (min-width: 768px) {
+
+  /* HEADER */
+  header {
+    height: 30rem;
+  }
+
+  header h1.title {
+    font-size: 4.8rem;
+  }
+
+  header h2.second-title {
+    font-size: 3.4rem;
+    margin-top: 1rem;
+  }
+
+  /*  SECTION */
+  section {
+    columns: 2;
+    column-gap: 1rem;
+    padding: 2rem 10% 10%;
+  }
+}
+
+/* Desktop, large screens */
+@media screen and (min-width: 1024px) {
+
+  /* HEADER */
+  header {
+    height: 50rem;
+  }
+
+  header h1.title {
+    font-size: 4.8rem;
+  }
+
+  header h2.second-title {
+    font-size: 3.4rem;
+    margin-top: 1rem;
+  }
+
+  /*  SECTION */
+  section {
+    columns: 3;
+    column-gap: 1.5rem;
+    padding: 2rem 10% 10%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
